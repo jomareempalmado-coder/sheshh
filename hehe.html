@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffe6f2, #ffb3d9);
+            color: #d63384;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .message {
+            font-size: 1.5em;
+            max-width: 800px; /* Increased width for longer messages */
+            margin: 0 auto 40px;
+            line-height: 1.6;
+            background: rgba(255,255,255,0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .photo {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .photo:hover {
+            transform: scale(1.05);
+        }
+        .heart {
+            font-size: 2em;
+            color: #ff1493;
+            margin-top: 20px;
+        }
+        .music-controls {
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            .message { font-size: 1.2em; }
+            .photo { width: 150px; height: 150px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Valentine's Day, My Love! 💖</h1>
+    <div class="message">
+        <p>Happy Valentine's Day, my love! Or should I say, happy anniversary? I'm so glad we've made it this far, and I hope this is just the beginning of forever. You've changed my life in ways I never imagined. Before you, I was just going through the motions, but you showed me what it means to truly live to laugh, to love, to dream. Every moment with you feels like a gift, and I cherish the way you make me feel seen and appreciated. From our first awkward conversations to the late-night talks that go on for hours, you've become my everything. I love the way you smile, the sound of your laugh, and how you always know how to make me feel better on my worst days. You're my rock, my inspiration, and my greatest adventure. I promise to always be there for you, to support your dreams, and to love you with all my heart. Here's to many more years of us growing, loving, and creating memories together. I love you more than words can say!</p>
+        <p>With all my love,</p>
+        <p>[Shawarma Seller]</p>
+    </div>
+    <div class="photos">
+        <img src="https://i.imgur.com/Y3GjiRS.jpeg" alt="Our first meeting" class="photo">
+        <img src="https://i.imgur.com/tVQJXNZ.jpeg" alt="First date" class="photo">
+        <img src="https://i.imgur.com/ny0EF1v.jpeg" alt="Random Pics" class="photo">
+        <img src="https://i.imgur.com/2jaPVjH.jpeg" alt="Ya Ameera" class="photo">
+    </div>
+    <div class="heart">❤️</div>
+    
+    <!-- Audio element for background music -->
+    <!-- Note: Autoplay may be blocked by browsers. If it doesn't play, the user can click the play button below. -->
+    <audio id="bgMusic" autoplay loop preload="auto">
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav"> <!-- Replace with your song URL (e.g., a direct MP3 link) -->
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Optional play button in case autoplay is blocked -->
+    <div class="music-controls">
+        <button onclick="document.getElementById('bgMusic').play()">Play Our Song 💕</button>
+    </div>
+</body>
+</html>
